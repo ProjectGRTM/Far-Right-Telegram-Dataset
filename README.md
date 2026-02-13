@@ -96,7 +96,7 @@ If you use this dataset or model in your research, please cite the following:
 
 ```bibtex
 @misc{yourusername2026,
-  author = {Shahin Nazar, Abigail Nieves Delgado, Toine Pieters},
+  author = {Shahin Nazar, Abigail Nieves Delgado, Toine Pieters, Thomas Jorna},
   title = {"Resisting The Great Replacement of White Men Through Neo-Nazi Fitness"},
   year = {2026},
   publisher = {Zenodo},
