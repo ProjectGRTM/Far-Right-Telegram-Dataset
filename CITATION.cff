@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+authors:
+- family-names: "Nazar
+  given-names: "Shahin"
+  orcid: "https://orcid.org/0000-0002-9033-878X"
+- family-names: "Jorna"
+  given-names: "Thomas F. K."
+  orcid: "https://orcid.org/0000-0003-2641-0537"
+title: "The Far-Right Telegram Ecosystem Dataset (1025 Channels, 5.7M+ Posts)"
+version: 1.0.0
+doi: 10.5281/zenodo.18633027
+date-released: 2026-02-13
+url: "https://github.com/shahin-nazar/far-right-ecosystem-dataset-telegram"
