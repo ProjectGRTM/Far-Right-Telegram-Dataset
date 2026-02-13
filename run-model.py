@@ -6,7 +6,6 @@ import glob
 import collections
 import re
 
-
 clubnames = r"./docs/network-channel-names.csv"
 print(r"Reading clubnames...")
 clubnames_df = pd.read_csv(clubnames)
@@ -24,7 +23,7 @@ for file in datasets_chunked:
     df = pd.read_csv(file, usecols=["channel_name"])
     channelnames.extend(df["channel_name"].dropna().unique())
 
-#convert to a Dataframe with unique values
+# convert to a Dataframe with unique values
 channelname_df = pd.DataFrame({"channel_name":list(set(channelnames))})
 save_path = "./output/allchannelnames.csv"
 channelname_df.to_csv(save_path, index=False, encoding="utf-8")
@@ -32,12 +31,6 @@ channelname_df.to_csv(save_path, index=False, encoding="utf-8")
 # Convert channel names to list for regex filtering
 channelnames_list = channelname_df["channel_name"].tolist()
 channelnames_pattern = r'\b(?:' + '|'.join(map(re.escape, channelnames_list)) + r')\b'
-    
-#load club names from clubname.csv
-#print (channelname_df)
-
-
-
 
 docs = []  # Use a list to store unique messages
 unique_docs = set()  # Track seen messages for deduplication
@@ -69,7 +62,6 @@ for dataset in datasets_chunked:
         print(f"Error processing {dataset}: {e}")
 
 print(f"Total unique documents collected: {len(docs)}")
-
 
 # total document duplicates need removal here, I did this manually in excel.
 
@@ -107,11 +99,9 @@ reduced_embeddings = UMAP(n_neighbors=10, n_components=2, min_dist=0.0, metric='
 
 print("Docs length:", len(docs))
 print("Topics length:", len(topics))
-
-print("Model topics_ length:", len(topic_model.topics_))
+print("Model topics length:", len(topic_model.topics_))
 
 df = pd.DataFrame({"topic": topics, "document": docs})
 
-
-save_path_df = "./output"
+save_path_df = "./output/topic-model-results.csv"
 df.to_csv(save_path_df, index=False, encoding="utf-8")
