@@ -1,4 +1,4 @@
-# BERTopic Modelling on Telegram Data
+# BERTopic Modelling on far-right Telegram Data
 
 This repository contains public Telegram data of 1025 far-right groups used to apply BERT-based topic modeling. The dataset contains over 3 million posts posted between 2019-2024. 
 
