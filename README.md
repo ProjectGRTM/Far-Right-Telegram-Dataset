@@ -23,6 +23,10 @@ The dataset used in this project is obtained from public Telegram channels and g
 
 Includes a broad array of far-right movements and groups such as: white supremacists, ultranationalists, identitarians, neo-Nazis, esoteric Nazism, Christian Nationalists, accelerationists of different colors, great replacement thinking and other conspiracy theories, militias, other vaguely defined extremists, and many more. Also includes contemporary movements such as the Active Clubs, Patriot Front, Atomwaffen related groups, Oath Keepers, Nordic Resistance Movement, Patriotic Alternative, Patriot Movement, and, indeed, many more.
 
+Post-level data and various fields including: channel ID's, channel names, message ID's, message texts, engagement metrics (views, number of replies, etc.), forwards, message links, media type contained, domain, url, and about a dozen more fields.
+
+The data was obtained via the Telegram API using iterative snowball sampling forwarded accounts of a seed group, thus capturing the relational and networked dimensions of the online far-right ecosystem.
+
 ### Data Description:
 
 - The processed data is stored in the `data/` directory. It includes multiple CSV files that have been chunked to fit into BERT-based topic models.
