@@ -3,8 +3,9 @@ name = "far-right-telegram-data"
 version = "0.1.0"
 description = "Public Telegram data from 1025 far-right channels"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12,<3.14"
 dependencies = [
     "bertopic>=0.17.4",
+    "natsort>=8.4.0",
     "pandas>=3.0.0",
 ]
