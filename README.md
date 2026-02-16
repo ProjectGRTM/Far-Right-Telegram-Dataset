@@ -41,16 +41,6 @@ The script caches processed documents and embeddings in `.cache/` to avoid recom
 uv run run-model.py --no-cache
 ```
 
-### Running the notebook
-
-If you prefer a notebook, `run-model.ipynb` contains the same code split into cells. To open it:
-
-```bash
-uv run --with jupyter jupyter lab run-model.ipynb
-```
-
-This will install Jupyter into the project environment and open the notebook in your browser.
-
 ## Dataset
 
 The dataset used in this project is obtained from public Telegram channels and groups. The data consists of messages and interactions, which were processed into CSV format.
